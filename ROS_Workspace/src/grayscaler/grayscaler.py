@@ -15,16 +15,16 @@ class image_converter:
     self.image_pub = rospy.Publisher("image_topic_2",Image,queue_size = 1000)
 
     self.bridge = CvBridge()
-    self.image_sub = rospy.Subscriber("image_topic",Image,self.callback)
+    self.image_sub = rospy.Subscriber("usb_cam.image_raw",Image,self.callback)
 
   def callback(self,data):
     try:
-      cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
+      cv_image = self.bridge.imgmsg_to_cv2(data, "mono8")
     except CvBridgeError as e:
       print(e)
 
     try:
-      self.image_pub.publish(self.bridge.cv2_to_imgmsg(cv_image, "bgr8"))
+      self.image_pub.publish(self.bridge.cv2_to_imgmsg(cv_image, "mono8"))
     except CvBridgeError as e:
       print(e)
 
