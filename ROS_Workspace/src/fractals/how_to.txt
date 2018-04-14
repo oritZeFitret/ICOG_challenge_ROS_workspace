@@ -1,0 +1,10 @@
+step 1: add all the files in this folder to your workspace.
+step 2: run the ros master:
+        type "roscore" into your terminal.
+step 3: go to "ROS_Workspace" directory
+step 4: open a terminal and type "catkin_make"
+step 5: run turtlesim: 
+        type "rosrun turtlesim turtlesim_node". 
+step 6: open a terminal in the workspace folder and type "source devel/setup.bash".
+step 5: in the terminal type "rosrun fractals fractals".
+step 6: go to the turtlesim window and wait for the turtle to draw the Koch snowflake fractal of iteration order 5.
