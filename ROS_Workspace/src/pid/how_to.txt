@@ -1,1 +1,13 @@
-step 1: 
+step 1: add all the files in this folder to your workspace.
+step 2: run the ros master:
+        type "roscore" into your terminal.
+step 3: go to "ROS_Workspace" directory
+step 4: open a terminal and type "catkin_make"
+step 5: open a terminal in the workspace folder and type "source devel/setup.bash".
+step 6: in the terminal type "roslaunch pid pid_chase.launch".
+step 7: go to the turtlesim window watch as "turtle2" chases and finds "turtle1",
+        #you might encounter errors if another turtlesim node is running. its also possible to 
+        encounter errors occasionally the first time you launch the pid_chase.launch file in such a 
+        case close out of the terminal gracefully(Ctrl + C) and retype the command in step 6
+        #you can also control the position of the turtle being chased by using your arrow keys inside
+        tthe terminal
