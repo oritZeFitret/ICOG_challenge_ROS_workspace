@@ -1,0 +1,8 @@
+step 1: add all the files in this folder to your workspace.
+step 2: run the ros master:
+        type "roscore" into your terminal.
+step 3: run turtlesim: 
+        type "rosrun turtlesim turtlesim_node". 
+step 4: change your working directory to "/ROS_Workspace/src/GUI_drive".
+step 5: open a terminal in this folder and type "python working_GUI_drive.py".
+step 6: a GUI should pop up, use the buttons to move around the turtle in turtlesim.
