@@ -1,8 +1,4 @@
 step 1: run the ros master
         open a termianl and type "roscore"
-step 2: run the usb camera node
-        open a terminal and type "rosrun usb_cam usb_cam_node"
-step 3: go to "ROS_Workspace/src/grayscaler" directory and open a terminal
-step 4: type in "python grayscaler.py"
-step 5: you can open another termianl and echo the matrix being publish by the usb camera by typing in 
-        "rostopic echo usb_cam
+step 2: set up your source at source devel/setup.bash
+step 3: roslaunch grayscaler grayscaler.launch
